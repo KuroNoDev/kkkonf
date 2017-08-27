@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>KKK Confession Machine</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="text">
+        /kkk/ Anonymous Confessions
+      </div>
+    </div>
+
+    <div class="main">
+      <form class="form-main">
+        <div class="form-group">
+          <label for="confession" class="col-form-label">Write your confession</label>
+          <div class="col-12">
+            <textarea class="form-control" rows="5" id="confession"></textarea>
+          </div>
+        </div>
+
+        <fieldset class="form-group">
+          <label class="col-form-label">What sort of post is this?</label>
+          <div class="col-sm-12">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" name="confession-type" type="radio" value="Actual Confession" checked>
+                Actual confession
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input"  name="confession-type"type="radio" value="Shitpost">
+                Shitpost
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input"  name="confession-type"type="radio" value="Other">
+                Other
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="identity" class="col-form-label">Identity<br><normal>(anything not inside square brackets [ ] will be posted on the page)<normal></label>
+          <div class="col-12">
+            <input class="form-control" type="text" id="identity">
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="go()">Submit</button>
+      </form>
+    </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
